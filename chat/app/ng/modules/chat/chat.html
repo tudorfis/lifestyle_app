@@ -1,0 +1,46 @@
+<div ng-controller="ChatCtrl">
+    <div class="col-xs-12">
+        <div class="panel panel-default">
+            <div class="panel-body top-message-panel">
+                <form class="form-inline" ng-submit="sendMessage()">
+                    <div class="form-group col-xs-12 col-sm-9">
+                        <input type="text" class="form-control width-100" id="message" ng-model="sm.message" placeholder="Scrie aici mesajul ..." autofocus>
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-3">
+                        <button type="submit" class="btn btn-success width-100">
+                            <i class="glyphicon glyphicon-ok"></i> Trimite
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <i class="glyphicon glyphicon-user"></i> Utilizatori
+            </div>
+            <div class="panel-body">
+                Basic panel example
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-9">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <i class="glyphicon glyphicon-list"></i> Discutii principale
+            </div>
+            <div class="panel-body">
+                <div ng-show="messages.length == 0">
+                    <i class="fa fa-spinner fa-spin fa-2x"></i>
+                </div>
+                <div ng-hide="messages.length == 0">
+                    <ul ng-repeat="msg in messages">
+                        <li>[{{msg.user}}]: {{msg.message}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
