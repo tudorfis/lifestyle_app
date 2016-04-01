@@ -1,0 +1,23 @@
+{
+  "name": "okalba",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Tudor Fis"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/tudorfis/lifestyle_app",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "^1.0.6",
+    "requirejs": "^2.2.0",
+    "material-design-icons": "^2.2.3"
+  }
+}
